@@ -7,8 +7,16 @@
 //
 
 import UIKit
+import AnyProgress
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var anyProgess: AnyProgress!{
+        didSet{
+            anyProgess.roundCorners(corners: [.topLeft,.bottomRight], radius: 20)
+        }
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

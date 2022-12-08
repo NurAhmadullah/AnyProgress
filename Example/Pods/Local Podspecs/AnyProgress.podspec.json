@@ -1,0 +1,22 @@
+{
+  "name": "AnyProgress",
+  "version": "0.1.0",
+  "summary": "A short description of AnyProgress.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/SohagCSE/AnyProgress",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "SohagCSE": "sohag.cse14.hstu@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/SohagCSE/AnyProgress.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "AnyProgress/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module AnyProgress {
+  umbrella header "AnyProgress-umbrella.h"
+
+  export *
+  module * { export * }
+}

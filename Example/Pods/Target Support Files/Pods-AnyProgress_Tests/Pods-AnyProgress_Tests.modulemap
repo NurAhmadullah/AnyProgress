@@ -1,0 +1,6 @@
+framework module Pods_AnyProgress_Tests {
+  umbrella header "Pods-AnyProgress_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

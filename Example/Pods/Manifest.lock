@@ -1,0 +1,16 @@
+PODS:
+  - AnyProgress (0.1.0)
+
+DEPENDENCIES:
+  - AnyProgress (from `../`)
+
+EXTERNAL SOURCES:
+  AnyProgress:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AnyProgress: 1f9024df4c7968556efe42255b5a2f2394eb7641
+
+PODFILE CHECKSUM: f97f14f9caced0f32b5a13581d6dac092fa2a999
+
+COCOAPODS: 1.11.3
