@@ -11,21 +11,23 @@ import AnyProgress
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var anyProgess: AnyProgress!{
+    private var appLogo = UIImage(named: "apple-logo.png")
+    
+    @IBOutlet weak var progressContainer: UIView!{
         didSet{
-            anyProgess.roundCorners(corners: [.topLeft,.bottomRight], radius: 20)
+            progressContainer.backgroundColor = .clear
+            let logoProgress = LogoProgressView(frame: progressContainer.bounds)
+            if let appLogo = self.appLogo{
+                logoProgress.setImage(maskingImage: appLogo, bgColor: .systemGreen, progressColor: .systemRed)
+            }
+            progressContainer.addSubview(logoProgress)
+            logoProgress.showProgress(0.7, animated: true, animationTime: 3)
         }
     }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }

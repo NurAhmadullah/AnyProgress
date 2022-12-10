@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		69C6B6E4076291493F6B65C668705338 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		890E75722941F59B001A43F4 /* AnyProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E75712941F59B001A43F4 /* AnyProgress.swift */; };
+		89253B302942E1BE00E1D85B /* LogoProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89253B2F2942E1BE00E1D85B /* LogoProgressView.swift */; };
+		894967D429447FEB00F0F0F4 /* LinearProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894967D329447FEB00F0F0F4 /* LinearProgressView.swift */; };
+		894967D629448EB500F0F0F4 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894967D529448EB500F0F0F4 /* CircularProgressView.swift */; };
 		B029779EA3CB0EB4A87F81791963222E /* Pods-AnyProgress_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B26512FB920CE4FB5EA9DEA8DF93A1 /* Pods-AnyProgress_Tests-dummy.m */; };
 		B8756DEEF3E2A1C7F393F5E985FB8D1D /* Pods-AnyProgress_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 508621EAFFD5F28CFEFF18974D4269F1 /* Pods-AnyProgress_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9F731A23C53288B970B647742E09223 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -60,6 +63,9 @@
 		7EACAB6AB03579E29C646AE055BA3F19 /* AnyProgress.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AnyProgress.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		82C32EE11F52C2C3708B609F96EB4DC7 /* Pods-AnyProgress_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnyProgress_Tests-Info.plist"; sourceTree = "<group>"; };
 		890E75712941F59B001A43F4 /* AnyProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyProgress.swift; sourceTree = "<group>"; };
+		89253B2F2942E1BE00E1D85B /* LogoProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoProgressView.swift; sourceTree = "<group>"; };
+		894967D329447FEB00F0F0F4 /* LinearProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearProgressView.swift; sourceTree = "<group>"; };
+		894967D529448EB500F0F0F4 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		89F58F53F3864149A62C821784752908 /* Pods-AnyProgress_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnyProgress_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8C7952FB0449D038138D0114F2468ABE /* AnyProgress-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AnyProgress-Info.plist"; sourceTree = "<group>"; };
 		92B26512FB920CE4FB5EA9DEA8DF93A1 /* Pods-AnyProgress_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnyProgress_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -183,6 +189,9 @@
 			isa = PBXGroup;
 			children = (
 				890E75712941F59B001A43F4 /* AnyProgress.swift */,
+				89253B2F2942E1BE00E1D85B /* LogoProgressView.swift */,
+				894967D329447FEB00F0F0F4 /* LinearProgressView.swift */,
+				894967D529448EB500F0F0F4 /* CircularProgressView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -380,7 +389,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89253B302942E1BE00E1D85B /* LogoProgressView.swift in Sources */,
 				ECC1850AA1AE0306E97E5384C860BBEC /* AnyProgress-dummy.m in Sources */,
+				894967D429447FEB00F0F0F4 /* LinearProgressView.swift in Sources */,
+				894967D629448EB500F0F0F4 /* CircularProgressView.swift in Sources */,
 				890E75722941F59B001A43F4 /* AnyProgress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

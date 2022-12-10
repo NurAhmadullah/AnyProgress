@@ -2,32 +2,40 @@
 //  AnyProgress.swift
 //  AnyProgress
 //
-//  Created by BJIT on 8/12/22.
+//  Created by Sohag on 8/12/22.
 //
 
 import Foundation
 import UIKit
+
+/*
+enum ProgressStyle{
+    case wave
+    case dotted
+    case gradient
+    case color
+    case image  // set use UIColor(image:"name.png")
+}
+*/
+
+enum ProgressType{
+    case linear
+    case circular
+    case logo
+//    case halfCircular
+//    case waveProgress       // set a wave property like gradient feature in all progress
+}
+
 @IBDesignable
-open class AnyProgress: UIView {
-    
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
-    }
-    
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-        setup()
-    }
-    
-    private func setup(){
-        
-    }
-    
-    public func roundCorners(corners: UIRectCorner, radius: CGFloat) {
-        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
-        let mask = CAShapeLayer()
-        mask.path = path.cgPath
-        layer.mask = mask
+open class AnyProgress {
+    static func createProgress(frame:CGRect,progressType:ProgressType) -> UIView{
+        switch progressType {
+        case .linear:
+            return LinearProgressView(frame: frame)
+        case .circular:
+            return CircularProgressView(frame: frame)
+        case .logo:
+            return LogoProgressView(frame: frame)
+        }
     }
 }
