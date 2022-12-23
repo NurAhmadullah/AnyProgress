@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -17,25 +17,84 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G7x-4b-8av">
-                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <rect key="frame" x="107" y="64" width="200" height="200"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="935-ez-zgs"/>
                                     <constraint firstAttribute="width" constant="200" id="pkA-cF-IpU"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FcL-ZL-gNC" customClass="ANYCircularProgressView" customModule="AnyProgress">
+                                <rect key="frame" x="107" y="284" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="2Yi-XM-raa"/>
+                                    <constraint firstAttribute="height" constant="200" id="gd0-hN-DEJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressBgColor">
+                                        <color key="value" systemColor="systemYellowColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GhR-5k-FeG" customClass="ANYLinearProgressView" customModule="AnyProgress">
+                                <rect key="frame" x="107" y="504" width="200" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="InN-h7-p4f"/>
+                                    <constraint firstAttribute="height" constant="20" id="ed5-Ma-O8Y"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                        <color key="value" systemColor="systemYellowColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressBgColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPe-z3-Bd3" customClass="ANYLogoProgressView" customModule="AnyProgress">
+                                <rect key="frame" x="107" y="544" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="8VZ-mf-HdT"/>
+                                    <constraint firstAttribute="height" constant="200" id="bG9-Rr-4wa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="logoImage" value="apple-logo"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressBgColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                        <color key="value" systemColor="systemYellowColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="G7x-4b-8av" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Cwv-gI-aYD"/>
+                            <constraint firstItem="GhR-5k-FeG" firstAttribute="top" secondItem="FcL-ZL-gNC" secondAttribute="bottom" constant="20" id="2sU-EO-FtB"/>
+                            <constraint firstItem="mPe-z3-Bd3" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="9bQ-vh-vqh"/>
+                            <constraint firstItem="G7x-4b-8av" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="9iY-at-xzj"/>
+                            <constraint firstItem="FcL-ZL-gNC" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="BKq-4w-jDb"/>
+                            <constraint firstItem="GhR-5k-FeG" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="HHt-ON-mg6"/>
+                            <constraint firstItem="FcL-ZL-gNC" firstAttribute="top" secondItem="G7x-4b-8av" secondAttribute="bottom" constant="20" id="IAN-b9-cB0"/>
+                            <constraint firstItem="mPe-z3-Bd3" firstAttribute="top" secondItem="GhR-5k-FeG" secondAttribute="bottom" constant="20" id="Q0q-9P-dxc"/>
+                            <constraint firstItem="mPe-z3-Bd3" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="cRY-Sg-E63"/>
                             <constraint firstItem="G7x-4b-8av" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="tDV-ON-Z3r"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="circularProgressView" destination="FcL-ZL-gNC" id="kjb-Zr-dXG"/>
+                        <outlet property="linearProgressView" destination="GhR-5k-FeG" id="OMN-JJ-Pfk"/>
+                        <outlet property="logoProgressView" destination="mPe-z3-Bd3" id="AjM-PA-kg1"/>
                         <outlet property="progressContainer" destination="G7x-4b-8av" id="qyn-Dz-JdB"/>
                     </connections>
                 </viewController>
@@ -45,8 +104,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="apple-logo" width="600" height="600"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -8,34 +8,33 @@
 import Foundation
 import UIKit
 
-/*
-enum ProgressStyle{
-    case wave
-    case dotted
-    case gradient
-    case color
-    case image  // set use UIColor(image:"name.png")
-}
-*/
 
-enum ProgressType{
+public enum ProgressType{
     case linear
     case circular
     case logo
-//    case halfCircular
-//    case waveProgress       // set a wave property like gradient feature in all progress
 }
 
-@IBDesignable
+public protocol ANYProgressView {
+    var progressColor:UIColor {get set}
+    var progressBgColor:UIColor {get set}
+    func showProgress(_ progress: CGFloat, duration:CGFloat?)
+    func setImage(maskingImage image: UIImage)
+}
+
+extension ANYProgressView {
+    public func setImage(maskingImage image: UIImage){}
+}
+
 open class AnyProgress {
-    static func createProgress(frame:CGRect,progressType:ProgressType) -> UIView{
+    public static func createProgress(frame:CGRect,progressType:ProgressType) -> ANYProgressView{
         switch progressType {
         case .linear:
-            return LinearProgressView(frame: frame)
+            return ANYLinearProgressView(frame: frame)
         case .circular:
-            return CircularProgressView(frame: frame)
+            return ANYCircularProgressView(frame: frame)
         case .logo:
-            return LogoProgressView(frame: frame)
+            return ANYLogoProgressView(frame: frame)
         }
     }
 }
