@@ -10,11 +10,11 @@ Pod::Spec.new do |s|
   'You can use this for progress like linear progress, circular progress, masked progress like logo progress, water wave progrss. And you can set gradient or colored progress as you want. Its easy to use and highly customisable.'
                        DESC
 
-  s.homepage         = 'https://github.com/SohagCSE/AnyProgress'
+  s.homepage         = 'https://github.com/NurAhmadullah/AnyProgress'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'SohagCSE' => 'sohag.cse14.hstu@gmail.com' }
-  s.source           = { :git => 'https://github.com/SohagCSE/AnyProgress.git', :tag => s.version.to_s }
+  s.author           = { 'NurAhmadullah' => 'nurhstucse@gmail.com' }
+  s.source           = { :git => 'https://github.com/NurAhmadullah/AnyProgress.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
