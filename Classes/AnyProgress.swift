@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-public enum ProgressType{
+public enum ANYProgressType{
     case linear
     case circular
     case logo
@@ -27,7 +27,7 @@ extension ANYProgressView {
 }
 
 open class AnyProgress {
-    public static func createProgress(frame:CGRect,progressType:ProgressType) -> ANYProgressView{
+    public static func createProgress(frame:CGRect,progressType:ANYProgressType) -> ANYProgressView{
         switch progressType {
         case .linear:
             return ANYLinearProgressView(frame: frame)

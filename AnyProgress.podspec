@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AnyProgress'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'Here you can use any progress, like gradient progress, circular progress, linear progress etc.'
 
 
